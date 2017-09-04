@@ -118,7 +118,7 @@ type variableProperties struct {
 		}
 
 		// include PixelDust variables
-		*android.Product_variables
+		Pixeldust android.Product_variables
 	} `android:"arch_variant"`
 }
 
@@ -238,7 +238,7 @@ type productVariables struct {
 	VendorVars map[string]map[string]string `json:",omitempty"`
 
 	// include PixelDust variables
-	*android.ProductVariables
+	Pixeldust android.ProductVariables
 }
 
 func boolPtr(v bool) *bool {

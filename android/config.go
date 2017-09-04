@@ -781,7 +781,7 @@ func (c *deviceConfig) DeviceKernelHeaderDirs() []string {
 }
 
 func (c *deviceConfig) SpecificCameraParametersLibrary() string {
-	return String(c.config.productVariables.Carbon.Specific_camera_parameter_library)
+	return String(c.config.productVariables.Pixeldust.Specific_camera_parameter_library)
 }
 
 func (c *deviceConfig) NativeCoverageEnabled() bool {
@@ -855,13 +855,13 @@ func stringSlice(s *[]string) []string {
 }
 
 func (c *deviceConfig) QTIAudioPath() string {
-	return String(c.config.productVariables.QTIAudioPath)
+	return String(c.config.productVariables.Pixeldust.QTIAudioPath)
 }
 
 func (c *deviceConfig) QTIDisplayPath() string {
-	return String(c.config.productVariables.QTIDisplayPath)
+	return String(c.config.productVariables.Pixeldust.QTIDisplayPath)
 }
 
 func (c *deviceConfig) QTIMediaPath() string {
-	return String(c.config.productVariables.QTIMediaPath)
+	return String(c.config.productVariables.Pixeldust.QTIMediaPath)
 }
